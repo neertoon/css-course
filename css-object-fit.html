@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+        }
+
+        .car {
+            width: calc(400px * 1);
+            height: calc(200px * 1);
+            border: 2px solid black;
+        }
+
+        .car-vertical {
+            height: calc(400px * 1);
+            width: calc(200px * 1);
+            border: 2px solid black;
+        }
+
+        .car img {
+            width: 100%;
+            height: 100%; /* Dopiero oba parametry mają wpływ na każdy object-fit*/
+            object-fit: contain;
+        }
+
+        .car-vertical img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="car">
+        <img src="skoda1.jpg" />
+    </div>
+
+    <div class="car-vertical">
+        <img src="skoda1.jpg" />
+    </div>
+</body>
+</html>
