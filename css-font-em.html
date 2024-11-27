@@ -18,7 +18,16 @@
         }
 
         p.dalej.jeszcze {
-            font-size: 2rem;
+            font-size: 40px;
+
+            span {
+                font-size: 2em;
+            }
+
+            span.ok {
+                font-size: 2rem;
+            }
+
         }
     </style>
 </head>
@@ -28,6 +37,9 @@
 <h1 class="test">Inny test</h1>
 <p>Inny tekst</p>
 <p class="dalej">Dalej</p>
-<p class="jeszcze dalej">Jeszcze dalej</p>
+<p class="jeszcze dalej">To ma rozmiar 40px
+    <span>To ma rozmiar 2 * 40px (em)</span>
+    <span class="ok">To ma rozmiar 2 * 16px (rem - bierze rozmiar z przeglądarki)</span>
+</p>
 </body>
 </html>
